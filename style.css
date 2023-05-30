@@ -31,3 +31,25 @@
   padding: 10px;
   margin: 0;
 }
+
+.percs{
+  height: 250px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.percs img{
+  width: 75px;
+  height: 55px;
+  object-position: center;
+}
+.percs h2{
+  text-align: center;
+}
+.percs p{
+  text-align: center;
+  font-size: 0.85rem;
+}
