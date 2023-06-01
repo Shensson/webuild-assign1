@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(163, 163, 163);
+  background-color: rgb(238, 238, 238);
 }
 
 .header {
@@ -37,42 +37,64 @@ body{
 }
 
 .percs{
-  height: 250px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  margin-top: 20px;
 }
 .percs img{
-  width: 75px;
-  height: 55px;
+  width: 70px;
+  height: 47px;
   object-position: center;
 }
 .percs h2{
   text-align: center;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .percs p{
   text-align: center;
   font-size: 0.85rem;
+  color: rgb(126, 125, 125);
+}
+.recent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 !important;
 }
 .recent-header{
+  margin: 0px 10px 0px 10px;
   font-size: 1.25rem;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(155, 155, 155);
+  font-weight: 600px !important;
+  margin-bottom: 30px;
 }
 .recent-work{
+  width: 350px;
   height: 320px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.recent-work img{
+  width: 100%;
+  padding: 0;
 }
 .recent-work h3{
   margin-top: 10px;
   font-size: 1rem;
   font-weight: 600;
+  margin-bottom: 5px;
+  padding: 0;
 }
 .recent-work p {
+  padding: 0;
   font-size: 0.85rem;
   color: rgb(121, 121, 121);
 }
