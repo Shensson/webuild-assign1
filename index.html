@@ -8,47 +8,61 @@
     <title>My Website</title>
   </head>
   <body>
-      <div class="container layout">
-        <div class="row header align-items-center">
-          <div class=" logo col-8 justify-content-start">
-            <h1 class="fw-light">My Website</h1>
+      <header>
+        <!--header-->
+        <div class="header d-flex align-items-center">
+            <h1 class="col-sm-8 col-md-4 fw-light">My Website</h1>
+            <div class="menu col-sm-4 col-md-6 d-flex align-items-center justify-content-end">
+              <img class="d-xl-none d-lg-none" src="imgs/menu.png" alt="">
+              <p class="d-xl-none d-lg-none">MENU</p>
+             <nav>
+              <ul class="header-nav nav">
+                <li class="d-none d-lg-inline d-xl-inline">Home</li>
+                <li class="d-none d-lg-inline d-xl-inline">Portofolio</li>
+                <li class="d-none d-lg-inline d-xl-inline">Staff</li>
+                <li class="d-none d-lg-inline d-xl-inline">Features</li>
+                <li class="d-none d-lg-inline d-xl-inline">Blog</li>
+                <li class="d-none d-lg-inline d-xl-inline">Contact</li>
+                <li class="d-none d-lg-inline d-xl-inline">Download</li>
+              </ul>
+             </nav>
+            </div>
           </div>
-          <div class=" menu d-flex col-4 justify-content-end align-items-center gap-2">
-            <img class="burger img-fluid" src="imgs/menu.png" alt="">
-            <p class="justify-content-end">MENU</p>
-          </div>
+        </header>
+        <main class="container">
+        <!--hero-->
+        <div class="hero d-flex">
+          <p class="d-sm-flex">We strive to make all our creations exquisite.</p>
         </div>
-        <div class="row headliner">
-          <p>We strive to make all our creations exquisite.</p>
-        </div>
-        <div class="content">
-          <div class="row percs">
-            <img class="img-fluid" src="imgs/icon-1.png" alt="">
+        <!--percs-->
+        <div class="d-flex align-items-center justify-content-center gap-2">
+          <div class="percs-container ">
+            <img class="" src="imgs/icon-1.png" alt="">
             <h2>Purpose</h2>
             <p>Vestibulum sapien nisi, suscipit vitae euismod vitae,
               imperdiet eget est. Etiam tincidunt tempus.
             </p>
           </div>
-          <div class="row percs">
-            <img class="img-fluid" src="imgs/icon-2.png" alt="">
+          <div class="percs-container">
+            <img class="" src="imgs/icon-2.png" alt="">
             <h2>Quality</h2>
             <p>Nam commodo risus pharetra magna egestas, nec 
               iaculis augue lobortis. Proin eleifend enim quis.</p>
           </div>
-          <div class="row percs">
-            <img class="img-fluid" src="imgs/icon-3.png" alt="">
+          <div class="percs-container">
+            <img class="" src="imgs/icon-3.png" alt="">
             <h2>Function</h2>
             <p>Aenean et tellus id nisi vehicula fringilla. In
               condimentum dui eu turpis mollis turpis suscipit.
             </p>
           </div>
-          <div class="row percs">
-            <img class="img-fluid" src="imgs/icon-4.png" alt="">
+          <div class="percs-container">
+            <img class="" src="imgs/icon-4.png" alt="">
             <h2>Elegant</h2>
             <p>Mauris accumsan magna in placerat lacinia. Proin sit
               amet neque vitae nunc pulvinar varius.
             </p>
-          </div>
+          </div><!--
           <h2 class="recent-header">RECENT WORK</h2>
           <div class="recent">
             <div class="row recent-work">
@@ -101,6 +115,7 @@
           </div>
         </div>
       </div>
+      </main>
       <div class="container footer">
         <h2>My Website</h2>
         <p>Quisque id dolor leo. Vivamus tincidunt in diam ac
@@ -130,6 +145,7 @@
           <p>© 2020 ITAcademy</p>
         </div>
       </div>
+      -->
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> 

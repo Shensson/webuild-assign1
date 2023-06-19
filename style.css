@@ -5,181 +5,105 @@ body{
 .header {
   background-color: white;
   height: 100px;
-}
-.header .logo h1{
-  margin: 0;
-}
-
-.header .menu img{
-  position: relative;
-  width: 1rem;
-  height: fit-content;
-  align-self: center;
-}
-.menu p {
-  margin-top: 15px;
-}
-.headliner{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(imgs/hero.jpg);
-  height: 130px;
-  background-size: cover;
-}
-.headliner p{
-  font-weight: 500;
-  background-color: rgb(34, 204, 164);
-  text-align: center;
-  color: white;
-  width: fit-content;
-  padding: 10px;
-  margin: 0;
-}
-
-.percs{
-  height: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-.percs img{
-  width: 70px;
-  height: 47px;
-  object-position: center;
-}
-.percs h2{
-  text-align: center;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-.percs p{
-  text-align: center;
-  font-size: 0.85rem;
-  color: rgb(126, 125, 125);
-}
-.recent{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 !important;
-}
-.recent-header{
-  margin: 10px 0px 10px 0px;
-  font-size: 1.25rem;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(155, 155, 155);
-  font-weight: 600px !important;
-  margin-bottom: 30px;
-}
-.recent-work{
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  margin-bottom: 20px;
-}
-.recent-work img{
-  width: 100%;
-  padding: 0;
-  height: auto;
-}
-.recent-work h3{
-  margin-top: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-  padding: 0;
-}
-.recent-work p {
-  padding: 0;
-  font-size: 0.85rem;
-  color: rgb(121, 121, 121);
-}
-.blog{
-  margin: 0 !important;
-  padding: 5px !important;
-}
-.blog-header{
-  margin: 10px 0px 10px 0px;
-  font-size: 1.25rem;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgb(155, 155, 155);
-  font-weight: 600px !important;
-  margin-bottom: 30px;
-}
-
-.from-blog img{
-  margin: 0;
-  padding: 10px;
-}
-
-.from-blog h3{
-  font-size: 1rem;
-  margin: 10px 0px;
-  padding: 10px;
-  font-weight: 600;
-}
-.date{
-  font-size: 0.85rem;
-  padding: 10 !important;
-  margin: 5px 0px 20px !important;
-  color: rgb(109, 109, 109);
-}
-.blog-short-desc{
-  font-size: 0.85rem;
-  padding-left: 10px !important;
-  margin: 0px 0px 30px 0px !important;
-  color: rgb(109, 109, 109);
-  line-height: 25px;
-}
-.footer{
-  width: 100%;
-  height: auto;
-  margin: 0px;
-  padding: 20px;
-  background-color: rgb(47, 47, 47);
-  padding-top: 50px;
-  padding-bottom: 0px;
-
-}
-.footer h2 {
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 20px;
-}
-.footer p{
-  color: rgb(163, 163, 163);
-  line-height: 25px;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 120px;
-}
-
-.recent-links{
-  padding: 0;
-  margin-bottom: 100px;
-}
-
-.recent-links li{
-  text-decoration: none;
-  list-style-type: none;
-  color: rgb(163, 163, 163);
-  border-top: 0.2px solid rgb(97, 97, 97);
-  border-bottom: 0.2px solid rgb(97, 97, 97);
-}
-
-.copyright{
-  text-align: center;
-  padding-top: 20px;
-  height: 70px;
-  background-color: rgb(21, 21, 21);
-  margin: 0;
-  margin-bottom: 0;
-  color: rgb(97, 97, 97);
   width: 100vw;
+}
+.header h1{
+  position: relative;
+  left: 20px;
+}
+.menu{
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+  right: 20px;
+  gap: 8px;
+}
+.menu img{
+  width: 15px;
+}
+.menu p{
+  padding: 0;
+  margin: 0;
+}
+.header-nav{
+  gap: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.header-nav li{
+  color: rgb(128, 128, 128);
+  font-weight: 500;
+}
+.header-nav li:hover{
+  color: rgb(72, 72, 72);
+  cursor: pointer;
+}
+/*header end*/
+
+/*hero start*/
+.hero{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-image: url(imgs/hero.jpg);
+  background-size: cover;
+  height: 30vw;
+  display: flex;
+}
+.hero p{
+  color: white;
+  text-align: center;
+  background-color: rgb(54, 190, 131);
+  padding: 10px 5px 10px 5px;
+  position: absolute;
+  left: 15vw;
+  margin-top: 5vw;
+  border-radius: 2px;
+  font-weight: 500;
+
+}
+.percs-container{
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.percs-container img{
+  height: 3vw;
+}
+.percs-container p{
+  text-align: center;
+}
+@media screen and (max-width: 568px){
+  .hero{
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media  screen and (min-width:568px) and (max-width: 768px) {
+  .header h1{
+    position: absolute;
+    left: 10vw;
+  }
+  .menu{
+    align-items: center;
+    justify-content: end;
+    right: 10vw
+  }
+  .hero{
+    background-image: url(imgs/hero.jpg);
+    background-size: cover;
+    display: flex;
+  }
+}
+@media  screen and (min-width: 1200px) {
+  body{
+    margin: 0px 5vw 0px 5vw !important;
+  }
+  
 }
