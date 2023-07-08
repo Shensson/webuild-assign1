@@ -100,7 +100,24 @@ header{
   padding: 0px 60px;
 }
 .features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 20px;
+  gap: 10px;
+}
+.features p {
+  font-size: 14px;
+  width: fit-content
+  ;
+  color: rgb(117, 117, 117);
+}
+.features h2{
+  font-size: 1rem;
+}
+.features img{
+  height: 45px;
+  width: 40px;
 }
 @media screen and (max-width: 568px){
   .hero{
@@ -113,6 +130,12 @@ header{
   .hero p{
     font-size: 0.9rem;
   }
+  .features-container{
+    padding: 10px !important;
+  }
+  .featuresc p{
+    width: 250px;
+  }
 }
 @media screen and (max-width: 992px){
   .hero{
@@ -121,6 +144,18 @@ header{
  
   .hero p{
     font-size: 0.9rem;
+  }
+  .features-container{
+    padding: 0px 80px;
+  }
+}
+@media screen and (min-width: 992px){
+  .features-container{
+    top: 100px;
+  }
+  .features p{
+    font-size: 1.05rem;
+    width: 300px
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -151,8 +186,10 @@ header{
     left: 7vw;
   }
 }
-@media screen and (max-width: 768px){
-  
+@media screen and (min-width: 768px){
+  .header{
+    padding: 0px 80px !important;
+  }
 }
 @media  screen and (min-width: 1200px) {
   .hero p{
